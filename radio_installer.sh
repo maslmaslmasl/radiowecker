@@ -97,7 +97,7 @@ download_files() {
     if [[ -n "$1" && "$1" == "--from-git" ]]; then
         print_status "Lade Dateien von Git Repository..."
         # Hier würde der Git-Download stehen
-        # git clone https://github.com/username/radiowecker.git .
+        git clone https://github.com/maslmaslmasl/radiowecker.git .
         print_error "Git-URL noch nicht konfiguriert. Verwenden Sie --from-files"
         exit 1
     elif [[ -n "$1" && "$1" == "--from-files" ]]; then
